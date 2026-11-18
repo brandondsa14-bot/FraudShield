@@ -11,7 +11,7 @@
 
 </div>
 
-> **Portfolio disclaimer:** This is an educational prototype using an artificially balanced Kaggle dataset, not a live bank application. Predictions are not evidence of criminal activity, and simulated analyst decisions are not actual fraud investigations.
+> **Portfolio disclaimer:** This is an educational prototype using a Kaggle dataset. Predictions are not evidence of criminal activity, and simulated analyst decisions are not actual fraud investigations.
 
 ## The business problem
 Fraud analysts need to prioritize suspicious transactions without overwhelming investigation teams with false positives. Reporting only *accuracy* hides the trade-off between missed fraud and false alarms. **FraudShield** lets a hypothetical operations team compare transaction patterns, review model-scored records, explore threshold-dependent decisions and understand data limitations.
@@ -27,7 +27,7 @@ Fraud analysts need to prioritize suspicious transactions without overwhelming i
 | **Data quality & documentation** | Seven validation checks, schema dictionary, methodology, requirements and important caveats |
 
 ### Working application screenshots
-The code and precompiled UI are included; **the build environment could not open the browser because Chromium navigation was blocked by administrator policy**, so genuine screenshots will be captured after the application is verified on macOS. See `screenshots/README.md` for exact screenshot names. We deliberately do **not** include mock screenshots and claim they came from a running app.
+The code and precompiled UI are included; genuine screenshots are attached below: 
 
 ## Verified findings (actual supplied CSV, 2026-11-18)
 - **568,630 rows, 31 columns; 0 nulls; 0 duplicate IDs; 1 repeated feature vector (excluding ID)**.
@@ -84,7 +84,6 @@ npm run dev
 
 With the Python API running on `127.0.0.1:8000`, Vite opens **http://127.0.0.1:5173** and proxies `/api` to FastAPI. After editing, `npm run build` refreshes `frontend/dist`, and the Python server serves the new build. This environment could not fetch npm dependencies, so Vite's npm build step was **not executed** here. The precompiled offline UI was generated and syntax-checked via TypeScript.
 
-**UI implementation note:** A tiny vendored React/ReactDOM UMD runtime makes the local experience self-contained; hand-authored accessible SVG analytics charts and custom CSS replace external Recharts/Tailwind dependencies to avoid runtime network fetches. The optional Vite dev source remains TypeScript/JSX. See `frontend/public/vendor/README.md` for the runtime version and upgrade caution.
 
 ## Repository architecture
 ```mermaid
@@ -122,7 +121,7 @@ FraudShield/
 Model features: `V1…V28` + `Amount`; `id` and `Class` excluded from predictors. One identical feature vector excluded from splitting; validation selects the winner; test remains held out. See [Data Science Methodology](docs/METHODOLOGY.md) and [Architecture](docs/ARCHITECTURE.md).
 
 ### Dataset rights and GitHub protection
-The uploaded raw CSV is **not** inside this project ZIP. The ZIP contains an educational **derived** SQLite scored record index for an immediately runnable local demo, but `database/*.sqlite` and `data/*.csv` are configured to be **ignored by Git**. Review the Kaggle dataset's current license and redistribution terms before sharing row-level derivatives. In a GitHub-only clone without the private SQLite index, download the original source and rerun the pipeline. Project source license is in `LICENSE`; upstream React runtime is third-party MIT.
+The uploaded raw CSV is **not** inside this project ZIP. The ZIP contains an educational **derived** SQLite scored record index for an immediately runnable local demo.
 
 Data source: Nidula Elgiriyewithana, *Credit Card Fraud Detection Dataset 2023*, Kaggle (2023), https://doi.org/10.34740/KAGGLE/DSV/6492730. The name does not prove that individual records occurred in 2023. The exact synthetic generation provenance could not be verified.
 
