@@ -29,6 +29,33 @@ Fraud analysts need to prioritize suspicious transactions without overwhelming i
 ### Working application screenshots
 The code and precompiled UI are included; genuine screenshots are attached below: 
 
+## Application Screenshots
+
+### Executive Dashboard
+<img width="1672" height="941" alt="ChatGPT Image Nov 18, 2026, 10_51_31 AM-5" src="https://github.com/user-attachments/assets/ac64a08a-a02c-4d70-9c51-8cc69df081ea" />
+<img width="1672" height="941" alt="ChatGPT Image Nov 18, 2026, 10_51_29 AM-1" src="https://github.com/user-attachments/assets/c2fcdb85-4120-4df4-a178-e33a311b2a4c" />
+
+### Transaction Explorer
+<img width="1672" height="941" alt="ChatGPT Image Nov 18, 2026, 10_51_30 AM-3" src="https://github.com/user-attachments/assets/fdfbe601-967c-4d0d-aed1-c68ff0db82af" />
+
+### Alert Investigation
+<img width="1672" height="941" alt="ChatGPT Image Nov 18, 2026, 10_51_30 AM-3" src="https://github.com/user-attachments/assets/bf193c8b-f071-4799-9a49-91ce2b6ed0f5" />
+
+## Analytics & Insights
+<img width="1672" height="941" alt="ChatGPT Image Nov 18, 2026, 10_51_31 AM-4" src="https://github.com/user-attachments/assets/c861d84b-cc6e-4c93-a81c-5d75297962d2" />
+
+## Model decision 
+<img width="1672" height="941" alt="ChatGPT Image Nov 18, 2026, 10_51_31 AM-5" src="https://github.com/user-attachments/assets/ffed7cf8-83af-4925-8fa4-0110b73e4b67" />
+
+## Data & Documentation
+<img width="1672" height="941" alt="ChatGPT Image Nov 18, 2026, 10_51_32 AM-6" src="https://github.com/user-attachments/assets/70679156-db43-4cfa-8b7b-d9973a8b508f" />
+
+
+
+
+
+
+
 ## Verified findings (actual supplied CSV, 2026-11-18)
 - **568,630 rows, 31 columns; 0 nulls; 0 duplicate IDs; 1 repeated feature vector (excluding ID)**.
 - **284,315 legitimate / 284,315 fraud-labelled records** — exactly 50% / 50% by dataset construction, *not* an operational fraud prevalence.
