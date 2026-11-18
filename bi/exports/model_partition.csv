@@ -1,0 +1,5 @@
+partition,records,fraud_labels,mean_risk
+excluded,1,1,0.99935
+test,85295,42647,0.49998
+train,398040,199020,0.49991
+validation,85294,42647,0.49993

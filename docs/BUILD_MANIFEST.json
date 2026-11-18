@@ -1,0 +1,16 @@
+{
+  "project": "FraudShield \u2014 Financial Fraud Detection & Risk Intelligence",
+  "version": "1.0.0",
+  "date": "2026-11-18",
+  "uploaded_csv_sha256": "73669bc23fe9da6392aaca1723456e4161443cdd71488137db9b49de6bc44afa",
+  "source_rows": 568630,
+  "selected_model": "Histogram gradient boosting",
+  "model_test_f1": 0.9972938461358232,
+  "automated_test_functions_passed": 11,
+  "typescript_compilation": "passed",
+  "javascript_syntax": "passed",
+  "browser_screenshots": "not executed: administrative browser URL blocking",
+  "original_source_csv_included": false,
+  "derived_sqlite_bundled_for_local_demo": true,
+  "github_notice": "database/*.sqlite is ignored by Git pending dataset distribution permission review"
+}
