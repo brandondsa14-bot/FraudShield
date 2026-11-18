@@ -163,7 +163,11 @@ Data source: Nidula Elgiriyewithana, *Credit Card Fraud Detection Dataset 2023*,
 - [User guide](docs/USER_GUIDE.md)
 
 ## Next improvements
-Cross-version browser verification; modernize vendored React; add authentication and named case ownership; production PostgreSQL migration; external naturally imbalanced, dated test data; calibration and drift monitoring; real human audit requirements; dashboard screenshots and deployment documentation after the Mac walkthrough.
+- Cross-version browser verification modernize vendored React;
+-  Add authentication and named case ownership;
+-  Production PostgreSQL migration;
+-  External naturally imbalanced, dated test data; calibration and drift monitoring;
+-  Real human audit requirements; dashboard screenshots and deployment documentation after the Mac walkthrough.
 
 ---
 **Student-built portfolio system · not a production fraud-detection service.**
